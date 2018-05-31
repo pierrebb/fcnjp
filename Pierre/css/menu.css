@@ -1,0 +1,109 @@
+BODY
+{
+    FONT-SIZE: 9pt;
+    BACKGROUND: white;
+    FONT-FAMILY: 'Arial'
+}
+
+td
+{
+    FONT-SIZE: 9pt;
+    COLOR: black;
+    FONT-FAMILY: 'Arial';
+}
+A:visited
+{
+    COLOR: #333366;
+    FONT-FAMILY: 'Arial';
+    FONT-SIZE: 8pt;
+}
+A:link
+{
+    COLOR: #333366;
+    FONT-FAMILY: 'Arial';
+    FONT-SIZE: 8pt;
+}
+A:hover
+{
+    TEXT-DECORATION: underline;
+    FONT-FAMILY: 'Arial';
+    FONT-SIZE: 8pt;
+}
+A:active
+{
+   COLOR: #333366;
+   FONT-FAMILY: 'Arial';
+   FONT-SIZE: 8pt;
+}
+A
+{
+    COLOR: #333366;
+    TEXT-DECORATION: none;
+    FONT-FAMILY: 'Arial';
+    FONT-SIZE: 8pt;
+}
+
+.TitreMenu
+{
+    BACKGROUND: #4A73D0;
+    FONT-WEIGHT: bold;
+    COLOR: white;
+    TEXT-ALIGN: center
+}
+
+.MenuCouleur
+{
+    BACKGROUND: #4A73D0;
+    WIDTH: 150px
+}
+TD.Titre
+{
+    FONT-WEIGHT: bold;
+    COLOR: white;
+    TEXT-ALIGN: center;
+    BACKGROUND: #003366;
+}
+
+.TitreMenu
+{
+    BACKGROUND: #000000;
+    FONT-WEIGHT: bold;
+    COLOR: white;
+    TEXT-ALIGN: center
+}
+
+.TitreBas
+{
+    BACKGROUND: #000000;
+    FONT-WEIGHT: bold;
+    COLOR: white;
+    TEXT-ALIGN: center
+}
+
+.TitreMenu:link
+{
+   	FONT-WEIGHT: bold;
+    COLOR: white;
+    TEXT-ALIGN: center
+}
+
+.TitreMenu:visited
+{
+   	FONT-WEIGHT: bold;
+    COLOR: white;
+    TEXT-ALIGN: center
+}
+
+.TitreMenu:active
+{
+   	FONT-WEIGHT: bold;
+    COLOR: white;
+    TEXT-ALIGN: center
+}
+    
+.TitreMenu:hover
+{
+   	FONT-WEIGHT: bold;
+    COLOR: white;
+    TEXT-ALIGN: center
+}

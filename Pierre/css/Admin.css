@@ -1,0 +1,85 @@
+TR.TrSelected
+{
+    BACKGROUND-COLOR: #F6DC12;
+}
+
+SELECT.multiple
+{
+    WIDTH: 300px;
+    HEIGHT: 100px
+}
+
+SELECT.single
+{
+    WIDTH: 300px;
+    HEIGHT: 40px
+}
+
+.ListePetite
+{
+    FONT-SIZE: 9px;
+    FONT-STYLE: normal;
+    FONT-FAMILY: Arial;
+    FONT-VARIANT: small-caps
+}
+.ListeMoyen
+{
+    FONT-SIZE: 10px;
+    FONT-STYLE: normal;
+    FONT-FAMILY: Arial;
+    FONT-VARIANT: small-caps
+}
+
+.Gras
+{
+	font-weight: bold;
+}
+
+.TxtBlueFonce {
+	color: #0000FF;
+}
+
+.TxtGreen {
+	color: #008000;
+}
+
+.TxtRed {
+	color: #FF0000;
+}
+
+.TxtRedGras {
+	color: #FF0000;
+	font-weight: bold;
+}
+
+.TxtGras {
+	color: #000000;
+	font-weight: bold;
+}
+
+.TxtTitreGras {
+    FONT-SIZE: 14px;
+	color: #000000;
+	font-weight: bold;
+}
+
+.TxtPrint {
+    FONT-SIZE: 14px;
+	color: #000000;
+}
+
+.TxtGrasPrint {
+    FONT-SIZE: 16px;
+	color: #000000;
+	font-weight: bold;
+}
+
+.TxtTitreGrasPrint{
+    FONT-SIZE: 20px;
+	color: #000000;
+	font-weight: bold;
+}
+
+.CGcodeTotal {
+	background-color: #D15959;
+}

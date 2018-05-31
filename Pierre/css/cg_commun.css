@@ -1,0 +1,47 @@
+/* style couleurs : commun */
+
+.CGnoir {
+	background-color: #000000;
+	color: #FFFFFF;
+}
+.CGtxnoir {
+	color: #000000;
+}
+
+.CGblanc {
+	background-color: #FFFFFF;
+}
+.CGtxblanc {
+	color: #FFFFFF;
+}
+
+.CGgrisfonce {
+	background-color: #666666;
+	color: #FFFFFF;
+}
+.CGtxgrisfonce {
+	color: #666666;
+}
+
+.CGgrismoyen {
+	background-color: #999999;
+	color: #FFFFFF;
+}
+.CGtxgrismoyen {
+	color: #999999;
+}
+
+.CGgrisclair {
+	background-color: #CCCCCC;
+}
+.CGtxgrisclair {
+	color: #CCCCCC;
+}
+
+.CGgristresclair {
+	background-color: #F1F1F1;
+}
+.CGtxgristresclair {
+	color: #F1F1F1;
+}
+

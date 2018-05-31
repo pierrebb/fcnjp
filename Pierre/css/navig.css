@@ -1,0 +1,40 @@
+/* style pour la navigation */
+
+.navigdeco_p1 {
+	height: 18px;
+	background-color: #FFFFFF;
+	background-image: url('../Images/tab_nav_arrondi_gauche.gif');
+	background-position: bottom right;
+	background-repeat: no-repeat;
+}
+
+.navigdeco_p2 {
+	height: 18px;
+	texte-align: right;
+	background-color: #FFFFFF;
+	background-image: url('../Images/tab_nav_arrondi_droite.gif');
+	background-position: bottom right;
+	background-repeat: no-repeat;
+}
+
+.navigselect {
+	font-size: 9px;
+	border: 1px solid Black;
+	background-color: #FFFFFF;
+	color: #000000;
+	margin-bottom: 2px;
+}
+
+.finzonenavig {
+	background-color: #FFFFFF;
+	background-image: url('../Images/navig_arrondi_bas.gif');
+	background-position: bottom left;
+	background-repeat: no-repeat;
+	color: #FFFFFF;
+	height: 23px;
+	font-size: 10px;
+	font-weight: bold;
+	font-family: Arial, Helvetica, sans-serif;
+	vertical-align: bottom;
+	padding-left: 21px;
+}

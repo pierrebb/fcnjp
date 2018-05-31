@@ -1,0 +1,11 @@
+.animation_icone img:hover{
+-moz-box-shadow: 2px 0px 5px 0px #343434;
+-webkit-box-shadow: 2px 0px 5px 0px #343434;
+-o-box-shadow: 2px 0px 5px 0px #343434;
+box-shadow: 2px 0px 5px 0px #343434;
+filter:progid:DXImageTransform.Microsoft.Shadow(color=#343434, Direction=90, Strength=5);
+-moz-border-radius: 2px;
+-webkit-border-radius: 2px;
+border-radius: 2px;
+}
+

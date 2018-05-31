@@ -1,0 +1,32 @@
+/* style pour recherche */
+
+.bord_haut_p1 {
+	background-image: url('../Images/rech_bord_h.gif');
+	background-position: top;
+	background-repeat: repeat-x;
+}
+
+.bord_haut_p2 {
+	background-image: url('../Images/rech_bord_h.gif');
+	background-position: bottom;
+	background-repeat: repeat-x;
+}
+
+.bord_gauche {
+	background-image: url('../Images/rech_bord_g.gif');
+	background-position: left;
+	background-repeat: repeat-y;
+}
+
+.bord_droit {
+	background-image: url('../Images/rech_bord_d.gif');
+	background-position: right;
+	background-repeat: repeat-y;
+}
+
+.bord_bas {
+	background-image: url('../Images/rech_bord_b.gif');
+	background-position: bottom;
+	background-repeat: repeat-x;
+}
+

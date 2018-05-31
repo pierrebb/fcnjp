@@ -1,0 +1,104 @@
+
+/*******************************************
+ * Boutons dynamiques (utilisation de sprites)
+ */
+a.bouton {
+	display:-moz-inline-box;
+	display:inline-block;
+	padding:0 0 0 0px;
+	font-family : 'Comic Sans MS';
+	font-weight : bold;
+	color: #505050;
+	white-space:nowrap;
+	text-align:center;
+	text-decoration: none;
+	vertical-align:middle;
+	border:0;
+	background:none;
+	font-size:13px;
+	cursor: pointer;
+}
+a.bouton span {
+	float: left;
+	height:20px;
+	background:url(../Images/Icono/sprites_bouton.gif) no-repeat;
+}
+a.bouton span.left {
+	width:20px;
+	background-position: 0px 0px;
+}
+a.bouton span.leftAnnuler {
+	width:20px;
+	background-position: 0px -120px;
+}
+a.bouton span.leftValider {
+	width:20px;
+	background-position: 0px -160px;
+}
+a.bouton span.leftExcell {
+	width:20px;
+	background-position: 0px -200px;
+}
+a.bouton span.leftPoubelle {
+	width:20px;
+	background-position: 0px -240px;
+}
+a.bouton span.leftAjout {
+	width:20px;
+	background-position: 0px -280px;
+}
+a.bouton span.leftFichier {
+	width:20px;
+	background-position: 0px -320px;
+}
+a.bouton span.leftModifier {
+	width:20px;
+	background-position: 0px -360px;
+}
+a.bouton span.leftEnregistrer {
+	width:20px;
+	background-position: 0px -400px;
+}
+a.bouton span.leftImprimer {
+	width:20px;
+	background-position: 0px -440px;
+}
+a.bouton span.leftCalendrier {
+	width:20px;
+	background-position: 0px -480px;
+}
+a.bouton span.leftMois {
+	width:20px;
+	background-position: 0px -520px;
+}
+a.bouton span.leftLoupe {
+	width:20px;
+	background-position: 0px -560px;
+}
+a.bouton span.center {
+	background-position: 0px -80px;
+	background-repeat: repeat-x;
+}
+a.bouton span.right {
+	width:20px;
+	background-position: 0px -40px;
+}
+
+a.bouton:hover { color: #000000; text-decoration: none;}
+a.bouton:hover span.left { background-position: 0px -20px;}
+a.bouton:hover span.leftAjout { background-position: 0px -300px;}
+a.bouton:hover span.leftAnnuler { background-position: 0px -140px;}
+a.bouton:hover span.leftCalendrier { background-position: 0px -500px;}
+a.bouton:hover span.leftExcell { background-position: 0px -220px;}
+a.bouton:hover span.leftEnregistrer { background-position: 0px -420px;}
+a.bouton:hover span.leftFichier { background-position: 0px -340px;}
+a.bouton:hover span.leftImprimer { background-position: 0px -460px;}
+a.bouton:hover span.leftModifier { background-position: 0px -380px;}
+a.bouton:hover span.leftMois { background-position: 0px -540px;}
+a.bouton:hover span.leftLoupe { background-position: 0px -580px;}
+a.bouton:hover span.leftPoubelle { background-position: 0px -260px;}
+a.bouton:hover span.leftValider { background-position: 0px -180px;}
+a.bouton:hover span.center { background-position: 0px -100px;}
+a.bouton:hover span.right { background-position: 0px -60px;}
+
+

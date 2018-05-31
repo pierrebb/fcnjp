@@ -1,0 +1,38 @@
+/* style couleurs : codeBleuCiel */
+
+.CGcodefonce {
+	background-color: #F6DC12;
+	color: #FFFFFF;
+}
+.CGtxcodefonce {
+	color: #4A73D0;
+}
+
+.CGcodemoyen {
+	background-color: #578DCF;
+	color: #FFFFFF;
+}
+.CGtxcodemoyen {
+	color: #578DCF;
+}
+
+.CGcodeclair {
+	background-color: #8BBCF0;
+}
+.CGtxcodeclair {
+	color: #8BBCF0;
+}
+
+.CGcodetresclair {
+	background-color: #E4EEF5;
+}
+.CGtxcodetresclair {
+	color: #F6DC12;
+}
+
+.CGexergue {
+	background-color: #CC0000;
+}
+.CGtxexergue {
+	color: #CC0000;
+}

@@ -1,0 +1,63 @@
+/* style pour les onglets */
+
+.onglet {
+	margin: 0;
+	padding: 0 0 20px 0px;
+	border-bottom: 10px solid #4A73D0; /* !ATTENTION! couleur en fonction du domaine */
+}
+
+.onglet ul, .onglet li {
+	margin: 0;
+	padding: 0;
+	display: inline;
+	list-style-type: none;
+}
+
+.onglet a:link, .onglet a:visited {
+	float: left;
+	line-height: 14px;
+	font-weight: bold;
+	font-size: 11px;
+	margin: 2px 1px 4px 0px;
+	text-decoration: none;
+	color: #000000;
+	border-bottom: 4px solid #4A73D0; /* !ATTENTION! couleur en fonction du domaine */
+	padding: 0px 12px 4px 12px;
+	background-color: #FFFFFF;
+	background-image: url('../Images/onglet_coin.gif');
+	background-position: left top;
+	background-repeat: no-repeat;
+}
+
+.onglet a:link.current, .onglet a:visited.current, .onglet a:hover {
+	border-bottom: 4px solid #4A73D0; /* !ATTENTION! couleur en fonction du domaine */
+	padding-bottom: 4px;
+	background: transparent;
+	color: #FFFFFF;
+	background-color: #4A73D0; /* !ATTENTION! couleur en fonction du domaine */
+	background-image: url('../Images/onglet_coin.gif');
+	background-position: left top;
+	background-repeat: no-repeat;
+}
+
+.onglet a:hover {
+	color: #FFFFFF;
+}
+
+.clearboth {
+	clear: both;
+}
+
+.ongletcontenu {
+	background-color: #FFFFFF;
+	padding: 4px
+}
+
+/* pour la navigation */
+.onglet a:link.navig, .onglet a:visited.navig, .onglet a:hover.navig {
+	border-bottom: 4px solid #F6DC12; /* !ATTENTION! couleur en fonction du domaine */
+	padding-bottom: 4px;
+	background: transparent;
+	color: #000000;
+}
+

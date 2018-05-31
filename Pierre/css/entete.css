@@ -1,0 +1,81 @@
+/* pour le bandeau */
+
+body {
+	background-color: #FFFFFF;
+	background-image: url('../Images/fond_bandegrise.gif');
+	background-position: top left;
+	background-repeat: repeat-y;
+	margin: 0px;
+	padding: 0px;
+}
+
+.bandeautitre {
+	padding-left: 15px;
+	color: #FFFFFF;
+	font-size: 14px;
+	font-weight: bold;
+}
+
+.bandeauoutils {
+	padding-right: 25px;
+	color: #FFFFFF;
+	font-size: 10px;
+}
+
+.bandeauoutils a {
+	color: #FFFFFF;
+	text-decoration : none;
+	font-size: 10px;
+}
+
+.bandeauoutils a:hover {
+	color: #FFFFFF;
+	text-decoration : none;
+}
+
+.bandeauchemin {
+	padding-left: 15px;
+	background-color: #000000;
+	color: #FFFFFF;
+	font-size: 12px;
+	font-weight: bold;
+}
+.bandeauchemin a {
+	color: #FFFFFF;
+	text-decoration : none;
+}
+.bandeauchemin a:hover {
+	color: #FFFFFF;
+	text-decoration : underline;
+}
+
+.bandeauidentite {
+	font-size: 11px; /*	font-weight: bold; */
+	background-color: transparent;
+	background-image: url('../Images/biaisnoir_bandeau.gif');
+	background-position: top left;
+	background-repeat: no-repeat;
+	text-align: right;
+	padding: 3px 25px 0 0;
+}
+
+.bandeaubas {
+	background-color: transparent;
+	background-image: url('../Images/fond_filetbas_bandeau.gif');
+	background-position: bottom right;
+	background-repeat: no-repeat;
+	margin: 0px;
+	padding: 0px 25px 5px 0px;
+	font-size: 10px;
+	text-align: right;
+}
+.bandeaubas a {
+	color: #999999;
+	text-decoration : none;
+	font-size: 10px;
+}
+.bandeaubas a:hover {
+	color: #999999;
+	text-decoration : underline;
+}
+

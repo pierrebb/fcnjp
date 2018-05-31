@@ -1,0 +1,139 @@
+/* feuille de style globale */
+* {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+}
+
+em {
+	font-style: italic;
+}
+
+a {
+	color: #000000;
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+h1 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	font-style: normal;
+	font-weight: bold;
+	font-variant: small-caps;
+	color: #000000;
+	margin: 18px 0 6px 0;
+}
+
+h2 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	font-style: normal;
+	font-weight: bold;
+	font-variant: small-caps;
+	color: #000000;
+	margin: 12px 0 4px 0;
+}
+
+h3 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-style: normal;
+	font-weight: bold;
+	font-variant: small-caps;
+	color: #000000;
+	margin: 6px 0 2px 0;
+}
+
+.nota {
+	font-size: 11px;
+	color: #666666;
+}
+
+.notaErreur {
+	font-size: 12px;
+	color: #B40431;
+	vertical-align: top;
+}
+
+.rature {
+	text-decoration: line-through;
+}
+
+.decal
+{
+	margin: 0 0 0 16px;
+}
+
+.titre {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	font-style: normal;
+	font-weight: bold;
+	font-variant: small-caps;
+	color: #000000;
+}
+
+.soustitre {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	font-style: normal;
+	font-weight: bold;
+	font-variant: small-caps;
+	color: #000000;
+}
+
+.minilien a {
+	font-size: 9px;
+	color: #000000;
+	text-decoration: underline;
+}
+
+.zoneform {
+	border: 1px solid #999999;
+}
+
+.menug {
+	font-size: 11px;
+}
+.menug a {
+	color: #000000;
+	text-decoration: none;
+}
+.menug a:hover {
+	text-decoration: underline;
+}
+
+.zone_titre td {
+	border-top: 2px solid #FFFFFF;
+}
+.zone_titre_p1 {
+	background-color: #000000;
+	color: #FFFFFF;
+	font-size: 13px;
+	font-weight: bold;
+	font-family: Arial, Helvetica, sans-serif;
+	vertical-align: bottom;
+	height: 20px;
+}
+.zone_titre_p2 {
+	background-color: #FFFFFF;
+	background-image: url('../Images/fiche_arrondi_haut.gif');
+	background-position: top left;
+	background-repeat: no-repeat;
+	color: #000000;
+	font-size: 13px;
+	font-weight: bold;
+	font-family: Arial, Helvetica, sans-serif;
+	vertical-align: bottom;
+	height: 20px;
+}
+.zone_titre_mini td {
+	background-color: #000000;
+	font-size: 13px;
+	color: #FFFFFF;
+	border-top: 2px solid #FFFFFF;
+	font-weight: bold;
+}
