@@ -87,7 +87,7 @@ class classPersonne{
 	function PutIdEquipe($IdEquipe){$this->IdEquipe = $IdEquipe;}
 	function PutNom($Nom){$this->Nom = $Nom;}
 	function PutPrenom($Prenom){$this->Prenom = $Prenom;}
-	function PutTelephone($Prenom){$this->Prenom = $Prenom;}
+	function PutTelephone($Telephone){$this->Telephone = $Telephone;}
 	function PutCourriel($Courriel){$this->Courriel= $Courriel;}
 	function PutAdresse($Adresse){$this->Adresse = $Adresse;}
 	function PutNaissance($Naissance){$this->Naissance = $Naissance;}

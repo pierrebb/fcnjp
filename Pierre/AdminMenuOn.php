@@ -74,7 +74,7 @@ if (GET_Connect()){
 									echo "</tr>";
 									echo "<tr>";
 									echo "<td colspan='2'>";
-									echo "<span id='MenuJOU' name='MenuJOU'></span>";
+									echo "<span id='MenuETAT' name='MenuETAT'></span>";
 									echo "</td>";
 									echo "</tr>";
 								}								
