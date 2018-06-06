@@ -5,6 +5,7 @@
 
 //////////////////////////////////////////////////////////////////////////////////// APPLICATION ////////////////////////////////////////////////////////////////////////////////////
 define("C_APP_DATE_VERSION","24/04/2018");
+define("C_APP_NAISSANCE_VERSION","24/04/2018");
 define("C_APP_TITRE","Gestion Data FC NANTES");
 define("C_APP_TITRE_LOGIN","Gestion Data FC NANTES");
 define("C_APP_TITRE_CLIENT","Pierre");
@@ -62,6 +63,9 @@ define("C_INIT_MDP", "C_INIT_MDP");
 define("C_INSERT","INSERT");
 define("C_SELECT","SELECT");
 define("C_UPDATE","UPDATE");
+
+//Maladie
+define("C_MALADIE_NOM",'MALADIE');
 
 // Log
 define("C_LOG_NOLOG",0);
@@ -131,6 +135,9 @@ define("C_PROFIL_ADM",20);
 define("C_PROFIL_ADM_TXT","Administrateur");
 define("C_PROFIL_JOU",30);
 define("C_PROFIL_JOU_TXT","Joueur");
+define("C_PROFIL_ETAT",30);
+define("C_PROFIL_ETAT_TXT","Etat");
+
 //////////////////////////////////////////////////////////////////////////////////// FIN PROFIL ////////////////////////////////////////////////////////////////////////////////////
 
 // Quote
@@ -170,6 +177,10 @@ define("C_TITRE_STATUT",'Statut');
 define("C_TITRE_LISTE_STATUT", "Liste des Statuts");
 define("C_TITRE_DEFQUESTION",'Liste des items etat de forme');
 define("C_TITRE_LISTE_DEFQUESTION", "Liste des items etat de forme");
+define("C_TITRE_PERSONNE",'Liste Personnes');
+define("C_TITRE_LISTE_PERSONNE", "Liste Personnes");
+define("C_TITRE_JoueurMalade",'Liste des joueurs malades');
+define("C_TITRE_LISTE_JoueurMalade", "Liste des joueurs malades");
 // Limit de select pour liste
 define("C_SELECT_SQL_LIMIT","LIMIT 0, 250");
 

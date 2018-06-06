@@ -4,6 +4,7 @@
 //<!-- Modif:	--> Johan Le Galliot
 // DATE Mai 2010
 //function DateMysqltoFr($DateMysql ,$Conv)
+//function NaissancetoFc ($NaissanceMysql, $Conv)
 //function DateHeureMinute($H)
 //function DateJour()
 //function DateHeureJour()
@@ -49,6 +50,32 @@ function DateMysqltoFr($DateMysql , $Conv){
 	return "";
 }
 
+function NaissanceMysqltoFr($NaissanceMysql , $Conv){
+	$Aa = "";
+	$Mm = "";
+	$Jj = "";
+	if ($NaissanceMysql != ""){
+		switch($Conv)
+		{
+			case C_NAISSANCE_FR:
+				if (strpos($NaissanceMysql, "-") > 0){
+					list($Aa, $Mm, $Jj) = explode("-", (string)$NaissanceMysql);
+					return ($Jj."/".$Mm."/".$Aa);
+					break;
+						
+				}
+			case C_NAISSANCE_MYSQL:
+			if (strpos($NaissanceMysql, "/") > 0){
+				list($Jj, $Mm, $Aa) = explode("/", (string)$NaissanceMysql);
+				return ($Aa."-".$Mm."-".$Jj);
+				break;
+			}
+		}
+	}
+	return "";
+}
+
+
 function DateHeureMinute($H){
 	 	if ($H==""){return "";}
 		
@@ -63,13 +90,22 @@ function DateHeureMinute($H){
 }
 
 function DateJour(){return date("d/m/Y");}
+function NaissanceJour(){return date("d/m/Y");}
 
 function DateDebutMoisCourant(){return date("01/m/Y");}
+function NaissanceDebutMoisCourant(){return date("01/m/Y");}
 
 function DateHeureJour(){return date("H:i");}
+function NaissanceHeureJour(){return date("H:i");}
 
 // Retourne le nombre de jour dans un mois
 function DateDernierJourMois($M,$A){
+	$dernJour = 28;
+	while (checkdate($M, $dernJour , $A)){$dernJour++;}
+	return --$dernJour;
+}
+
+function NaissanceDernierJourMois($M,$A){
 	$dernJour = 28;
 	while (checkdate($M, $dernJour , $A)){$dernJour++;}
 	return --$dernJour;

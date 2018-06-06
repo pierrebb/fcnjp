@@ -33,7 +33,7 @@
 	if (isset($_POST['Code'])) {$Code = $_POST['Code'];}
 	if (isset($_POST['Actif'])) {$Actif = $_POST['Actif'];}
 
-	require_once $_SERVER['DOCUMENT_ROOT'].C_SITE_REPERTOIRE."Includes/"."MAdm/GenEquipe_Class.php";
+	require_once $_SERVER['DOCUMENT_ROOT'].C_SITE_REPERTOIRE."Includes/"."MEnt/GenEquipe_Class.php";
 
 	// MAJ
 	if ($Bdd == 1){

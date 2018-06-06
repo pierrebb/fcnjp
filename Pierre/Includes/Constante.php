@@ -5,6 +5,7 @@
 
 //////////////////////////////////////////////////////////////////////////////////// APPLICATION ////////////////////////////////////////////////////////////////////////////////////
 define("C_APP_DATE_VERSION","24/04/2018");
+define("C_APP_NAISSANCE_VERSION","24/04/2018");
 define("C_APP_TITRE","Gestion Data FC NANTES");
 define("C_APP_TITRE_LOGIN","Gestion Data FC NANTES");
 define("C_APP_TITRE_CLIENT","Pierre");
@@ -51,11 +52,12 @@ define ("C_ESPACE", "&nbsp;&nbsp;&nbsp;");
 
 // Date
 define("C_DATE_FR","FR");
+define("C_NAISSANCE_FR","FR");
 define("C_DATE_LEN",10);
 define("C_DATE_MAX",10);
 define("C_DATE_MYSQL","MYSQL");
 define("C_DATE_NOM","Date");
-
+define("C_NAISSANCE_MYSQL","MYSQL");
 // HTML couleur
 define("C_HTML_BLANC","#FFFFFF");
 define("C_HTML_GRIS","#E8E8E8");
@@ -99,8 +101,13 @@ define("C_LOGIN_INACTIF","4");
 define("C_LOGIN_TXT_INACTIF","Erreur de login.");
 
 define("C_PAGE_ACCUEIL","PAGE_ACCUEIL");
+
+//MALADIE
+define("C_MALADIE_NOM","Maladie");
 //Naissance, Nom...
 define("C_NAISSANCE_NOM","Naissance");
+define("C_NAISSANCE_LEN",50);
+define("C_NAISSANCE_MAX",50);
 define("C_NOM_NOM","Nom");
 define("C_NOM_LEN",50);
 define("C_NOM_MAX",50);
@@ -218,7 +225,8 @@ define("C_TELEPHONE_LEN",50);
 define("C_TELEPHONE_MAX",50);
 define("C_TITRE_INFOPERSONNE",'Information Personnes');
 define("C_TITRE_LISTE_INFOPERSONNE", "Information Personnes");
-
+define("C_TITRE_JoueurMalade",'Liste des joueurs malades');
+define("C_TITRE_LISTE_JoueurMalade", "Liste des joueurs malades");
 // Limit de select pour liste
 define("C_SELECT_SQL_LIMIT","LIMIT 0, 250");
 

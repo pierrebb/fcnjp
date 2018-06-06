@@ -68,6 +68,17 @@ if (GET_Connect()){
 									echo "</tr>";
 								}
 								
+								if (GET_Joueur()){
+									echo "<tr class='TitreMenu'>";
+									echo "<td class='TitreMenu'><span id='TitreETAT' name='TitreETAT'></span></td><td ".C_WITH_ICON."><span id='LienJOU' name='LienJOU'>".get_boutonOpenMenu('AfficherETAT()')."</span></td>\n";
+									echo "</tr>";
+									echo "<tr>";
+									echo "<td colspan='2'>";
+									echo "<span id='MenuJOU' name='MenuJOU'></span>";
+									echo "</td>";
+									echo "</tr>";
+								}								
+								
 								if (GET_Connect()){
 									echo "<tr class='TitreMenu'>";
 									echo "<td class='TitreMenu'><span id='TitreMdp' name='TitreMdp'><a href='www/MAdm/GesMdP_D.php' target='contenu' class='TitreMenu' title='Changement de mon mot de passe'>Mot de passe</a></span></td><td ".C_WITH_ICON."></td>\n";
@@ -76,9 +87,10 @@ if (GET_Connect()){
 									echo "<td colspan='2'></td>";
 									echo "</tr>";
 								}
-									echo "<tr>";
-									echo "<td>&nbsp;</td>";
-									echo "</tr>";
+								
+								echo "<tr>";
+								echo "<td>&nbsp;</td>";
+								echo "</tr>";
 									
 								if (GET_Connect()){
 									echo "<tr class='TitreMenu'>";

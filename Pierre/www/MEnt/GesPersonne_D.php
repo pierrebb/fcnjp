@@ -41,15 +41,16 @@
 	
 	if (isset($_POST['IdProfil'])) {$IdProfil = $_POST['IdProfil'];}
 	if (isset($_POST['IdStatut'])) {$IdStatut = $_POST['IdStatut'];}
-	if (isset($_POST['IdPoste'])) {$IdPoste = $_POST['IdPoste'];}
+	if (isset($_POST['IdPoste'])) {$IdPoste= $_POST['IdPoste'];}
 	if (isset($_POST['IdEquipe'])) {$IdEquipe = $_POST['IdEquipe'];}
 	if (isset($_POST['Nom'])) {$Nom = $_POST['Nom'];}
 	if (isset($_POST['Prenom'])) {$Prenom = $_POST['Prenom'];}
 	if (isset($_POST['Telephone'])) {$Telephone = $_POST['Telephone'];}
 	if (isset($_POST['Courriel'])) {$Courriel = $_POST['Courriel'];}
 	if (isset($_POST['Adresse'])) {$Adresse = $_POST['Adresse'];}
-	if (isset($_POST['Naissance'])) {$Naissance = $_POST['Naissance'];}
+	if (isset($_POST['Naissance'])) {$Naissance = $_POST['Naissance'];}	
 	if (isset($_POST['Actif'])) {$Actif = $_POST['Actif'];}
+	
 	
 	require_once $_SERVER['DOCUMENT_ROOT'].C_SITE_REPERTOIRE."Includes/"."MEnt/GenPersonne_Class.php";
 
@@ -71,7 +72,6 @@
 	    $cPersonne->PutNaissance($Naissance);
 		$cPersonne->PutActif($Actif);
 		
-		
 		$Message = C_MES_SAVE_NOK;
 		if ($cPersonne->Validate($ActionPHP)) {
 			$Message = C_MES_SAVE_OK;
@@ -82,11 +82,7 @@
 		    $Message=C_MES_SAVE_NOK;
 		}
 		
-		unset($cProfil);
-		unset($cStatut);
-		unset($cPoste);
 		unset($cEquipe);
-		
 	}
 	$Bdd = 0;
 ?>
@@ -211,9 +207,9 @@
 													<?=get_DecodeChaine(C_NOM_NOM).C_CODE_OBLIGATOIRE?>
 												</td>
 												<td width="100%">
-													<?=get_InputText('Nom', C_NOM_LEN, C_NOM_MAX,$Nom)?>
+													<?=get_InputText('Nom', C_NOM_LEN, C_NOM_MAX, $Nom)?>
 												</td>
-											</tr>
+											</tr
 											<tr>
 												<td nowrap class="tableau_libellescolonnes cgCodefonce"  >
 													<?=get_DecodeChaine(C_PRENOM_NOM).C_CODE_OBLIGATOIRE?>
@@ -227,39 +223,42 @@
 													<?=get_DecodeChaine(C_TELEPHONE_NOM).C_CODE_OBLIGATOIRE?>
 												</td>
 												<td width="100%">
-													<?=get_InputText('Telephone', $Telephone)?>
+													<?=get_InputText('Telephone', C_TELEPHONE_LEN, C_TELEPHONE_MAX, $Telephone)?>
 												</td>
-											</tr>
+											</tr
 											<tr>
 												<td nowrap class="tableau_libellescolonnes cgCodefonce"  >
-													<?=get_DecodeChaine(C_COURRIEL_NOM)?>
+													<?=get_DecodeChaine(C_COURRIEL_NOM).C_CODE_OBLIGATOIRE?>
 												</td>
 												<td width="100%">
 													<?=get_InputText('Courriel', C_COURRIEL_LEN, C_COURRIEL_MAX, $Courriel)?>
 												</td>
-											</tr>
+											</tr	
 											<tr>
 												<td nowrap class="tableau_libellescolonnes cgCodefonce"  >
-													<?=get_DecodeChaine(C_ADRESSE_NOM)?>
+													<?=get_DecodeChaine(C_ADRESSE_NOM).C_CODE_OBLIGATOIRE?>
 												</td>
 												<td width="100%">
 													<?=get_InputText('Adresse', C_ADRESSE_LEN, C_ADRESSE_MAX, $Adresse)?>
 												</td>
-											</tr>
+											</tr
 											<tr>
 												<td nowrap class="tableau_libellescolonnes cgCodefonce"  >
-													<?=get_DecodeChaine(C_NAISSANCE_NOM)?>
+													<?=get_DecodeChaine(C_NAISSANCE_NOM).C_CODE_OBLIGATOIRE?>
 												</td>
 												<td width="100%">
-													<?=get_InputText('Naissance', $Naissance)?>
+													<?=get_InputText('Naissance', C_NAISSANCE_LEN, C_NAISSANCE_MAX, DateMysqltoFr($Naissance, C_DATE_FR))?>
 												</td>
-											</tr>
+											</tr		
 											<tr>
 												<td nowrap class="tableau_libellescolonnes cgCodefonce"  >
-													<?=get_DecodeChaine(C_ACTIF_NOM)?>
+													<?=get_DecodeChaine(C_ACTIF_NOM).C_CODE_OBLIGATOIRE?>
 												</td>
 												<td width="100%">
-													<?=get_ListeOuiNon('Actif', $Actif,'onchange=javascript:getModifTrue()')?>
+													<?=GET_ListeOuiNon('Actif',$Actif,'onchange=javascript:getModifTrue()');?>
+												</td>
+											</tr>
+											
 												</td>
 											</tr>
 										</tbody>

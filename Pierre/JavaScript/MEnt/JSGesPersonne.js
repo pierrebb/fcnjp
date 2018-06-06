@@ -20,10 +20,10 @@ function VerifForm() {
 	
 	if (document.frmAdmin.IdEquipe.value == 0){
 		strErreur+= C_TAB + C_EQUIPE + C_BR;
-	};
+	}
 	
 	document.frmAdmin.Nom.value = trim(document.frmAdmin.Nom.value);
-	if (!isDate(document.frmAdmin.Nom.value)) {	
+	if (document.frmAdmin.Nom.value=="") {
 		strErreur+= C_TAB + C_NOM + C_BR;
 	}
 
@@ -44,14 +44,11 @@ function VerifForm() {
 	if (document.frmAdmin.Adresse.value=="") {
 		strErreur+= C_TAB + C_ADRESSE + C_BR;
 	}
-		document.frmAdmin.Naissance.value = trim(document.frmAdmin.Naissance.value);
-	if (document.frmAdmin.Naissance.value=="") {
+	document.frmAdmin.Naissance.value = trim(document.frmAdmin.Naissance.value);
+	if (!isDate(document.frmAdmin.Naissance.value)) {	
 		strErreur+= C_TAB + C_NAISSANCE + C_BR;
 	}
-			document.frmAdmin.Actif.value = trim(document.frmAdmin.Actif.value);
-	if (document.frmAdmin.Actif.value=="") {
-		strErreur+= C_TAB + C_ACTIF + C_BR;
-	};
+
 	if (strErreur != ""){
 		strErreur = C_ERREUR + strErreur;
 		alert(strErreur);

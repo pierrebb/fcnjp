@@ -3,11 +3,11 @@ class classPersonne{
 
 	private $Id = 0;
 	private $IdProfil = 0;
-	private $IdStatut = "";
-	private $IdPoste = "";
-	private $IdEquipe = "";
+	private $IdStatut = 0;
+	private $IdPoste = 0;
+	private $IdEquipe = 0;
 	private $Nom= "";
-	private $Prenom = 0;
+	private $Prenom = "";
 	private $Telephone = "";
 	private $Courriel = "";
 	private $Adresse = "";
@@ -84,7 +84,7 @@ class classPersonne{
 	function PutIdProfil($IdProfil){$this->IdProfil = $IdProfil;}
 	function PutIdStatut($IdStatut){$this->IdStatut = $IdStatut;}
 	function PutIdPoste($IdPoste){$this->IdPoste = $IdPoste;}
-	function PutIdEquipe($IdEquipe){$this->IdEquipet = $IdEquipe;}
+	function PutIdEquipe($IdEquipe){$this->IdEquipe = $IdEquipe;}
 	function PutNom($Nom){$this->Nom = $Nom;}
 	function PutPrenom($Prenom){$this->Prenom = $Prenom;}
 	function PutTelephone($Prenom){$this->Prenom = $Prenom;}
@@ -138,7 +138,7 @@ class classPersonne{
 		$PS = $Sql->ConstruireSQL("@Telephone", $this->Telephone, $PS);
 		$PS = $Sql->ConstruireSQL("@Courriel", $this->Courriel, $PS);
 		$PS = $Sql->ConstruireSQL("@Adresse", $this->Adresse, $PS);
-		$PS = $Sql->ConstruireSQL("@Naissance", $this->Naissance, $PS);
+		$PS = $Sql->ConstruireSQL("@Naissance", DateMysqltoFr($this->Naissance, C_DATE_MYSQL), $PS);
 		$PS = $Sql->ConstruireSQL("@Actif", $this->Actif, $PS);
 		
 		$Sql->BeginTransactionSQL(__METHOD__);
@@ -156,6 +156,7 @@ class classPersonne{
 			}
 		break;
 		case C_UPDATE:
+		echo $PS;
 			$Status=$Sql->UpdateSQL($PS);
 		break;
 		default:

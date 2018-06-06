@@ -48,15 +48,26 @@ $ps_InfCollectiveUpdate="UPDATE informationcollective SET IdEquipe='@IdEquipe', 
 //
 $ps_InfCollectiveDeleteById="DELETE FROM informationcollective WHERE IdInfoCollective = '@IdInfoCollective'";
 
+///////////////////////////////////////////////////////////////////////////////////   JOU_MALADE ////////////////////////////////////////////////////////////////////////////////////
+$ps_JouMaladeSelectAll="SELECT * FROM jou_mala ORDER BY DateDebut DESC";
+//
+$ps_JouMaladeSelectById="SELECT * FROM jou_mala WHERE IdPersonne = '@IdPersonne'";
+//
+$ps_JouMaladeInsert="INSERT INTO jou_mala (IdPersonne, IdMal, DateDebut, Reprise) VALUES ('@IdPersonne', '@IdMal', '@DateDebut', '@Reprise')";
+//
+$ps_JouMaladeUpdate="UPDATE jou_mala SET IdPersonne='@IdPersonne', IdMal='@IdMal', DateDebut='@DateDebut'";
+//
+$ps_JouMaladeDeleteById="DELETE FROM jou_mala WHERE IdPersonne = '@IdPersonne'";
+
 
 ///////////////////////////////////////////////////////////////////////////////////   PERSONNE ////////////////////////////////////////////////////////////////////////////////////
 $ps_PersonneSelectAll="SELECT * FROM personne ORDER BY IDEquipe DESC";
 //
-$ps_PersonneSelectById="SELECT * FROM personne WHERE IdPersonne = '@IdEquipe'";
+$ps_PersonneSelectById="SELECT * FROM personne WHERE IdPersonne = '@IdPersonne'";
 //
-$ps_PersonneInsert="INSERT INTO personne (IdProfil, IdStatut, IdPoste, IdEquipe, Nom, Prenom, Telephone, Courriel, Adresse, Naissance, Actif) VALUES ('@IdProfil', '@IdStatut', '@IdPoste', '@IdEquipe','@Nom', '@Prenom', '@Telephone', '@Courriel', '@Adresse', '@Naissance, '@Actif',)";
+$ps_PersonneInsert="INSERT INTO personne (IdProfil, IdStatut, IdPoste, IdEquipe, Nom, Prenom, Telephone, Courriel, Adresse, Naissance, Actif) VALUES ('@IdProfil', '@IdStatut', '@IdPoste', '@IdEquipe','@Nom', '@Prenom', '@Telephone', '@Courriel', '@Adresse', '@Naissance', '@Actif')";
 //
-$ps_PersonneUpdate="UPDATE personne SET IdProfil='@IdProfil', IdStatut='@IdStatut', IdPoste='@IdPoste', IdEquipe='@IdEquipe', Nom='@Nom', Prenom='@Prenom', Telephone='@Telephone', Courriel='@Courriel', Adresse='@adresse', Naissance='@Naissance', Actif='@Actif',  WHERE IdPersonne = '@IdPersonne'";
+$ps_PersonneUpdate="UPDATE personne SET IdProfil='@IdProfil', IdStatut='@IdStatut', IdPoste='@IdPoste', IdEquipe='@IdEquipe', Nom='@Nom', Prenom='@Prenom', Telephone='@Telephone', Courriel='@Courriel', Adresse='@Adresse', Naissance='@Naissance', Actif='@Actif'  WHERE IdPersonne = '@IdPersonne'";
 //
 $ps_PersonneDeleteById="DELETE FROM personne WHERE IdPersonne = '@IdPersonne'";
 

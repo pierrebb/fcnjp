@@ -100,8 +100,8 @@ const C_MOD_ART_NOMEN = "Voulez-vous transformer cet article en nomenclature?";
 const C_MOD_NOMEN = "Voulez-vous modifier cette nomenclature ?";
 const C_MOD_NOMEN_ART = "Voulez-vous transformer cette nomenclature en article ?";
 const C_MOD_PRIX = "Voulez-vous modifier le prix des articles sélectionnés ?";
-const C_NOMEN_OBLIG = "Le code nomenclature est obligatoire.";
-const C_NUM_ART = "Le numéro d'ordre de l'article : ";
+
+const C_NAISSANCE = "Une date de naisance";
 
 const C_OBJET = "Un objet.";
 const C_OF_ANNULER = "Voulez-vous annuler cet OF ?";

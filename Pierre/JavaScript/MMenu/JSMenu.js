@@ -1,11 +1,14 @@
 const C_ADM_NOM = 'Parametres';
 const C_ADM = 'ADM';
 
-const C_ENT_NOM = 'Info. Entrainement';
+const C_ENT_NOM = 'Gestion Entrainement';
 const C_ENT = 'ENT';
 
-const C_JOU_NOM = 'Analyse Entrainement';
+const C_JOU_NOM = 'Suivi Medical';
 const C_JOU = 'JOU';
+
+const C_ETAT_NOM = 'Etat Forme';
+const C_ETAT= 'ETAT';
 
 const C_MDP_NOM = 'Mot de passe';
 const C_MDP = 'MDP';
@@ -116,18 +119,16 @@ function AfficherENT(){
 	var Menu="";
 	Menu = "<table border='0' width='100%'>";
 	Menu += "<tr>";
-	Menu += "<td colspan='1' width='100%'><a href='www/MEnt/GesInfCollective_L.php' target='contenu' title='Gestion des ent. col.'>Gestion des ent. col.</a></td>";
+	Menu += "<td colspan='1' width='100%'><a href='www/MEnt/GesInfCollective_L.php' target='contenu' title='Gestion des ent. col.'>Entrainement Coll</a></td>";
 	Menu += "<td colspan='1'><a href=javascript:OuvrirLien('www/MEnt/GesInfCollective_L.php') title='"+C_TITLE_OPEN_ONGLET+"'><span class='animation_icone'><img src='Images/Icono/IcoOnglet.gif'></a></span</td>";
 	Menu += "</tr>";
-	Menu += "</table>";
-Menu += "<tr>";
-	Menu = "<table border='0' width='100%'>";
 	Menu += "<tr>";
-	Menu += "<td colspan='1' width='100%'><a href='www/MEnt/GesPersonne_L.php' target='contenu' title='Gestion des personnes'>Gestion des Personnes</a></td>";
+	Menu += "<td colspan='1' width='100%'><a href='www/MEnt/GesPersonne_L.php' target='contenu' title='Gestion des personnes'>Personnes</a></td>";
 	Menu += "<td colspan='1'><a href=javascript:OuvrirLien('www/MEnt/GesPersonne_L.php') title='"+C_TITLE_OPEN_ONGLET+"'><span class='animation_icone'><img src='Images/Icono/IcoOnglet.gif'></a></span</td>";
 	Menu += "</tr>";
-	Menu += "</table>";;
+	Menu += "</table>";
 	
+
 	
 	
 	
@@ -142,8 +143,8 @@ function AfficherJOU(){
 	var Menu="";
 	Menu = "<table border='0' width='100%'>";
 	Menu += "<tr>";
-	Menu += "<td colspan='1' width='100%'><a href='www/MAdm/GesEquipe_L.php' target='contenu' title='Gestion des &eacute;quipes'>Gestion des &eacute;quipes</a></td>";
-	Menu += "<td colspan='1'><a href=javascript:OuvrirLien('www/MAdm/GesEquipe_L.php') title='"+C_TITLE_OPEN_ONGLET+"'><span class='animation_icone'><img src='Images/Icono/IcoOnglet.gif'></a></span</td>";
+	Menu += "<td colspan='1' width='100%'><a href='www/MEnt/GesJouMalade_L.php' target='contenu' title='Gestion des joueurs malades'>Joueurs malade</a></td>";
+	Menu += "<td colspan='1'><a href=javascript:OuvrirLien('www/MEnt/GesJouMalade_L.php') title='"+C_TITLE_OPEN_ONGLET+"'><span class='animation_icone'><img src='Images/Icono/IcoOnglet.gif'></a></span</td>";
 	Menu += "</tr>";
 	Menu += "</table>";
 
@@ -151,6 +152,21 @@ function AfficherJOU(){
 	document.getElementById("TitreJOU").innerHTML="<a href=\"javascript:Cacher('"+C_JOU+"')\" class='TitreMenu' title='"+C_JOU_NOM+"'>"+C_JOU_NOM+"</a>";
 	document.getElementById("LienJOU").innerHTML="<a href=\"javascript:Cacher('"+C_JOU+"')\"><img src='Images/Icono/IcoFermer.gif' title='"+C_TITLE_CLOSE+"'></a>";
 	InitMenuCacher(C_JOU);
+}
+
+function AfficherETAT(){
+	var Menu="";
+	Menu = "<table border='0' width='100%'>";
+	Menu += "<tr>";
+	Menu += "<td colspan='1' width='100%'><a href='www/MEnt/GesJouMalade_L.php' target='contenu' title='Gestion des joueurs malades'>Joueurs malade</a></td>";
+	Menu += "<td colspan='1'><a href=javascript:OuvrirLien('www/MEnt/GesJouMalade_L.php') title='"+C_TITLE_OPEN_ONGLET+"'><span class='animation_icone'><img src='Images/Icono/IcoOnglet.gif'></a></span</td>";
+	Menu += "</tr>";
+	Menu += "</table>";
+
+	document.getElementById("MenuETAT").innerHTML = Menu;
+	document.getElementById("TitreETAT").innerHTML="<a href=\"javascript:Cacher('"+C_ETAT+"')\" class='TitreMenu' title='"+C_ETAT_NOM+"'>"+C_ETAT_NOM+"</a>";
+	document.getElementById("LienETAT").innerHTML="<a href=\"javascript:Cacher('"+C_ETAT+"')\"><img src='Images/Icono/IcoFermer.gif' title='"+C_TITLE_CLOSE+"'></a>";
+	InitMenuCacher(C_ETAT);
 }
 
 
@@ -163,6 +179,7 @@ function InitMenuCacher(Id){
 	if (Id != C_ADM) { Cacher(C_ADM); }
 	if (Id != C_ENT) { Cacher(C_ENT); }
 	if (Id != C_JOU) { Cacher(C_JOU); }
+	if (Id != C_ETAT) { Cacher(C_ETAT); }
 }
 
 function InitMenuVisible(Id){
