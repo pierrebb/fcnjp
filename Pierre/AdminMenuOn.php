@@ -35,17 +35,6 @@ if (GET_Connect()){
 						<table border="0" cellpadding="1" cellspacing="0" width="95%" height="100%">
 							<tbody>
 								<?
-								if (GET_Administration()){
-									echo "<tr class='TitreMenu'>";
-									echo "<td class='TitreMenu'><span id='TitreADM' name='TitreADM'></span></td><td ".C_WITH_ICON."><span id='LienADM' name='LienADM'>".get_boutonOpenMenu('AfficherADM()')."</span></td>\n";
-									echo "</tr>";
-									echo "<tr>";
-									echo "<td colspan='2'>";
-									echo "<span id='MenuADM' name='MenuADM'></span>";
-									echo "</td>";
-									echo "</tr>";
-								}
-
 								if (GET_Entrainement()){
 								    echo "<tr class='TitreMenu'>";
 								    echo "<td class='TitreMenu'><span id='TitreENT' name='TitreENT'></span></td><td ".C_WITH_ICON."><span id='LienENT' name='LienENT'>".get_boutonOpenMenu('AfficherENT()')."</span></td>\n";
@@ -55,22 +44,20 @@ if (GET_Connect()){
 								    echo "<span id='MenuENT' name='MenuENT'></span>";
 								    echo "</td>";
 								    echo "</tr>";
-								}
-								
-								if (GET_Joueur()){
+								}								
+								if (GET_Match()){
 									echo "<tr class='TitreMenu'>";
-									echo "<td class='TitreMenu'><span id='TitreJOU' name='TitreJOU'></span></td><td ".C_WITH_ICON."><span id='LienJOU' name='LienJOU'>".get_boutonOpenMenu('AfficherJOU()')."</span></td>\n";
+									echo "<td class='TitreMenu'><span id='TitreMATCH' name='TitreMATCH'></span></td><td ".C_WITH_ICON."><span id='LienMATCH' name='LienMATCH'>".get_boutonOpenMenu('AfficherMATCH()')."</span></td>\n";
 									echo "</tr>";
 									echo "<tr>";
 									echo "<td colspan='2'>";
-									echo "<span id='MenuJOU' name='MenuJOU'></span>";
+									echo "<span id='MenuMATCH' name='MenuMATCH'></span>";
 									echo "</td>";
 									echo "</tr>";
-								}
-								
-								if (GET_Joueur()){
+								}													
+								if (GET_Etat()){
 									echo "<tr class='TitreMenu'>";
-									echo "<td class='TitreMenu'><span id='TitreETAT' name='TitreETAT'></span></td><td ".C_WITH_ICON."><span id='LienJOU' name='LienJOU'>".get_boutonOpenMenu('AfficherETAT()')."</span></td>\n";
+									echo "<td class='TitreMenu'><span id='TitreETAT' name='TitreETAT'></span></td><td ".C_WITH_ICON."><span id='LienETAT' name='LienETAT'>".get_boutonOpenMenu('AfficherETAT()')."</span></td>\n";
 									echo "</tr>";
 									echo "<tr>";
 									echo "<td colspan='2'>";
@@ -78,7 +65,48 @@ if (GET_Connect()){
 									echo "</td>";
 									echo "</tr>";
 								}								
+								if (GET_Test()){
+								    echo "<tr class='TitreMenu'>";
+								    echo "<td class='TitreMenu'><span id='TitreTEST' name='TitreTEST'></span></td><td ".C_WITH_ICON."><span id='LienTEST' name='LienTEST'>".get_boutonOpenMenu('AfficherTEST()')."</span></td>\n";
+								    echo "</tr>";
+								    echo "<tr>";
+								    echo "<td colspan='2'>";
+								    echo "<span id='MenuTEST' name='MenuTEST'></span>";
+								    echo "</td>";
+								    echo "</tr>";
+								}	 																
+									if (GET_Suivim()){
+								    echo "<tr class='TitreMenu'>";
+								    echo "<td class='TitreMenu'><span id='TitreSUIVIM' name='TitreSUIVIM'></span></td><td ".C_WITH_ICON."><span id='LienSUIVIM' name='LienSUIVIM'>".get_boutonOpenMenu('AfficherSUIVIM()')."</span></td>\n";
+								    echo "</tr>";
+								    echo "<tr>";
+								    echo "<td colspan='2'>";
+								    echo "<span id='MenuSUIVIM' name='MenuSUIVIM'></span>";
+								    echo "</td>";
+								    echo "</tr>";
+								}
+								if (GET_Importation()){
+								    echo "<tr class='TitreMenu'>";
+								    echo "<td class='TitreMenu'><span id='TitreIMPORTATION' name='TitreIMPORTATION'></span></td><td ".C_WITH_ICON."><span id='LienIMPORTATION' name='LienIMPORTATION'>".get_boutonOpenMenu('AfficherIMPORTATION()')."</span></td>\n";
+								    echo "</tr>";
+								    echo "<tr>";
+								    echo "<td colspan='2'>";
+								    echo "<span id='MenuIMPORTATION' name='MenuIMPORTATION'></span>";
+								    echo "</td>";
+								    echo "</tr>";
+								}	 																
 								
+								if (GET_Administration()){
+									echo "<tr class='TitreMenu'>";
+									echo "<td class='TitreMenu'><span id='TitreADM' name='TitreADM'></span></td><td ".C_WITH_ICON."><span id='LienADM' name='LienADM'>".get_boutonOpenMenu('AfficherADM()')."</span></td>\n";
+									echo "</tr>";
+									echo "<tr>";
+									echo "<td colspan='2'>";
+									echo "<span id='MenuADM' name='MenuADM'></span>";
+									echo "</td>";
+									echo "</tr>";
+								} 
+									 
 								if (GET_Connect()){
 									echo "<tr class='TitreMenu'>";
 									echo "<td class='TitreMenu'><span id='TitreMdp' name='TitreMdp'><a href='www/MAdm/GesMdP_D.php' target='contenu' class='TitreMenu' title='Changement de mon mot de passe'>Mot de passe</a></span></td><td ".C_WITH_ICON."></td>\n";

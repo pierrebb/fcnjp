@@ -65,6 +65,8 @@ $ps_PersonneSelectAll="SELECT * FROM personne ORDER BY IDEquipe DESC";
 //
 $ps_PersonneSelectById="SELECT * FROM personne WHERE IdPersonne = '@IdPersonne'";
 //
+$ps_PersonneListeSelectAll="SELECT DISTINCT M.IdPersonne, TRIM(M.Nom) FROM personne M ORDER BY TRIM(Nom)";
+//
 $ps_PersonneInsert="INSERT INTO personne (IdProfil, IdStatut, IdPoste, IdEquipe, Nom, Prenom, Telephone, Courriel, Adresse, Naissance, Actif) VALUES ('@IdProfil', '@IdStatut', '@IdPoste', '@IdEquipe','@Nom', '@Prenom', '@Telephone', '@Courriel', '@Adresse', '@Naissance', '@Actif')";
 //
 $ps_PersonneUpdate="UPDATE personne SET IdProfil='@IdProfil', IdStatut='@IdStatut', IdPoste='@IdPoste', IdEquipe='@IdEquipe', Nom='@Nom', Prenom='@Prenom', Telephone='@Telephone', Courriel='@Courriel', Adresse='@Adresse', Naissance='@Naissance', Actif='@Actif'  WHERE IdPersonne = '@IdPersonne'";
@@ -89,7 +91,7 @@ $ps_MaladieSelectAll="SELECT * FROM defmaladie ORDER BY CodeMal";
 $ps_MaladieSelectById="SELECT * FROM defmaladie WHERE IdMal = '@IdMal'";
 $ps_MaladieVerifCodeInsert="SELECT count(*) FROM defmaladie WHERE CodeMal='@CodeMal'";
 $ps_MaladieVerifCodeUpdate="SELECT count(*) FROM defmaladie WHERE IdMal<>'@IdMal' AND CodeMal='@CodeMal'";
-$ps_MaladieListeSelectAll="SELECT DISTINCT M.IdMAL, TRIM(M.CodeMal) FROM defMaladie M ORDER BY TRIM(CodeMal)";
+$ps_MaladieListeSelectAll="SELECT DISTINCT M.IdMal, TRIM(M.CodeMal) FROM defmaladie M ORDER BY TRIM(CodeMal)";
 //
 $ps_MaladieInsert="INSERT INTO defmaladie (CodeMal) VALUES ('@CodeMal')";
 //

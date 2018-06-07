@@ -137,6 +137,12 @@ define("C_PROFIL_JOU",30);
 define("C_PROFIL_JOU_TXT","Joueur");
 define("C_PROFIL_ETAT",30);
 define("C_PROFIL_ETAT_TXT","Etat");
+define("C_PROFIL_SUIVIM",40);
+define("C_PROFIL_SUIVIM_TXT","SuiviMedical");
+define("C_PROFIL_TEST",40);
+define("C_PROFIL_TEST_TXT","Test");
+define("C_PROFIL_MATCH",40);
+define("C_PROFIL_MATCH_TXT","Match");
 
 //////////////////////////////////////////////////////////////////////////////////// FIN PROFIL ////////////////////////////////////////////////////////////////////////////////////
 

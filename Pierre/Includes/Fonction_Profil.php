@@ -45,6 +45,68 @@ function GET_Joueur(){
 	return $boOk;
 }
 
+function GET_SUIVIM(){
+	$boOk=0;
+	$Administration = "";
+	$Joueur = "";
+	if(isset($_SESSION['ADMINISTRATION'])) {$Administration=$_SESSION['ADMINISTRATION'];}
+	if(isset($_SESSION['JOUEUR'])) {$Article=$_SESSION['JOUEUR'];}
+
+	if ($Administration == C_PROFIL_ADM){$boOk=1;}
+	if ($Joueur == C_PROFIL_JOU){$boOk=1;}
+	return $boOk;
+}
+
+function GET_ETAT(){
+	$boOk=0;
+	$Administration = "";
+	$Joueur = "";
+	if(isset($_SESSION['ADMINISTRATION'])) {$Administration=$_SESSION['ADMINISTRATION'];}
+	if(isset($_SESSION['JOUEUR'])) {$Article=$_SESSION['JOUEUR'];}
+
+	if ($Administration == C_PROFIL_ADM){$boOk=1;}
+	if ($Joueur == C_PROFIL_JOU){$boOk=1;}
+	return $boOk;
+}
+
+function GET_MATCH(){
+	$boOk=0;
+	$Administration = "";
+	$Joueur = "";
+	if(isset($_SESSION['ADMINISTRATION'])) {$Administration=$_SESSION['ADMINISTRATION'];}
+	if(isset($_SESSION['JOUEUR'])) {$Article=$_SESSION['JOUEUR'];}
+
+	if ($Administration == C_PROFIL_ADM){$boOk=1;}
+	if ($Joueur == C_PROFIL_JOU){$boOk=1;}
+	return $boOk;
+}
+
+function GET_TEST(){
+	$boOk=0;
+	$Administration = "";
+	$Joueur = "";
+	if(isset($_SESSION['ADMINISTRATION'])) {$Administration=$_SESSION['ADMINISTRATION'];}
+	if(isset($_SESSION['JOUEUR'])) {$Article=$_SESSION['JOUEUR'];}
+
+	if ($Administration == C_PROFIL_ADM){$boOk=1;}
+	if ($Joueur == C_PROFIL_JOU){$boOk=1;}
+	return $boOk;
+}
+
+function GET_IMPORTATION(){
+	$boOk=0;
+	$Administration = "";
+	$Joueur = "";
+	if(isset($_SESSION['ADMINISTRATION'])) {$Administration=$_SESSION['ADMINISTRATION'];}
+	if(isset($_SESSION['JOUEUR'])) {$Article=$_SESSION['JOUEUR'];}
+
+	if ($Administration == C_PROFIL_ADM){$boOk=1;}
+	if ($Joueur == C_PROFIL_JOU){$boOk=1;}
+	return $boOk;
+}
+
+
+
 function GET_Calendrier(){
 	$boOk=0;
 	$Administration = "";
@@ -56,6 +118,7 @@ function GET_Calendrier(){
 	if ($Calendrier == C_PROFIL_CAL){$boOk=1;}
 	return $boOk;
 }
+
 
 function GET_Connect(){
 	$boOk=0;

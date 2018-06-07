@@ -100,7 +100,7 @@ const C_MOD_ART_NOMEN = "Voulez-vous transformer cet article en nomenclature?";
 const C_MOD_NOMEN = "Voulez-vous modifier cette nomenclature ?";
 const C_MOD_NOMEN_ART = "Voulez-vous transformer cette nomenclature en article ?";
 const C_MOD_PRIX = "Voulez-vous modifier le prix des articles sélectionnés ?";
-
+const C_MALADIE= "Une maladie";
 const C_NAISSANCE = "Une date de naisance";
 
 const C_OBJET = "Un objet.";

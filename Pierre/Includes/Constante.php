@@ -58,6 +58,8 @@ define("C_DATE_MAX",10);
 define("C_DATE_MYSQL","MYSQL");
 define("C_DATE_NOM","Date");
 define("C_NAISSANCE_MYSQL","MYSQL");
+define("C_DATEDEBUT_NOM","DateDebut");
+define("C_DATEREPRISE_NOM","DateReprise");
 // HTML couleur
 define("C_HTML_BLANC","#FFFFFF");
 define("C_HTML_GRIS","#E8E8E8");
@@ -175,6 +177,12 @@ define("C_PROFIL_ENT",30);
 define("C_PROFIL_ENT_TXT","Entrainement");
 define("C_PROFIL_JOU",40);
 define("C_PROFIL_JOU_TXT","Joueur");
+define("C_PROFIL_SUIVIM",40);
+define("C_PROFIL_SUIVIM_TXT","SuiviMedical");
+define("C_PROFIL_TEST",40);
+define("C_PROFIL_TEST_TXT","Test");
+define("C_PROFIL_MATCH",40);
+define("C_PROFIL_MATCH_TXT","Match");
 define("C_PROFIL_CON",100);
 
 //////////////////////////////////////////////////////////////////////////////////// FIN PROFIL ////////////////////////////////////////////////////////////////////////////////////
